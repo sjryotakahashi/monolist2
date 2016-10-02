@@ -1,7 +1,7 @@
-<% content_for :head do -%> 
-  <meta property="og:title" content="<%= @user %>" /> 
-  <meta property="og:description" content="<%= @user %>のモノページ。<%= @user %>の欲しいモノ、持ってるモノを表示しています。" /> 
-<% end -%>
+<% content_for :head  do %>
+  <title><%= @user.name %>-monolist</title>
+  <meta name="description" content="<%= @user.name %>のモノページ。<%= @user.name %>の欲しいモノ、持ってるモノを表示しています。">
+<% end %>
 <%= render 'profile' , user: @user %>
 
 

@@ -1,7 +1,7 @@
-<% content_for :head do -%> 
-  <meta property="og:title" content="<%= @item.title %>- monolist" /> 
-  <meta property="og:description" content="<%= @item.title %>に関する情報です。この商品を欲しい人、持ってる人を表示しています。" /> 
-<% end -%>
+<% content_for :head  do %>
+  <title><%= @item.title %>-monolist</title>
+  <meta name="description" content="<%= @item.title %>に関する情報です。この商品を欲しい人、持ってる人を表示しています。">
+<% end %>
 <div class="container">
   <div class="container-inner inner-sm clearfix">
     <div class="item-single-main">
@@ -50,7 +50,7 @@
       </div>
       <div class="text-center">
         <% #TODO 正しいリンク先に %>
-        <%= link_to('楽天詳細ページへ', 'http://item.rakuten.co.jp') %>
+        <%= link_to '楽天詳細ページへ', 'http://item.rakuten.co.jp' %>
       </div>
     </div>
   </div>
